@@ -1,0 +1,12 @@
+{
+  "name": "@bit/roni5.shop2.global.footer",
+  "version": "1.0.0",
+  "homepage": "https://bitsrc.io/roni5/shop2/global/footer",
+  "main": "Footer.js",
+  "dependencies": {
+    "react": "^16.4.2"
+  },
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE"
+}

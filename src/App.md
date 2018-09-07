@@ -1,16 +1,9 @@
 import React, { Component } from 'react';
 import { base } from './base';
-//import { css } from 'emotion';
-//import logo from './logo.svg';
+import logo from './logo.svg';
+import ChordEidtor from './components/ChordEditor';
+import Footer from './components/Footer';
 import './App.css';
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
-import Title from './components/title/Title';
-import UserItem from './components/user/UserItem'
-import {paragraph, links} from './components/links/Links'
-import styled, { css } from "react-emotion";
-import Nav from './components/header/Nav';
-
 
 class App extends Component {
   constructor() {
@@ -51,19 +44,14 @@ class App extends Component {
   render() {
     return (
       <div className="App wrapper">
-        <Header />
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          </header>
           <div className="workspace">
+          <ChordEidtor />
           </div>
-        <Title>The Next Generation of CSS-in-JS </Title>
-        <Title> <h2>This should be read</h2></Title>
 
-        <UserItem user='Roni' />
-        <div>
-    <p className={paragraph}>
-      Some text with a
-      <a className={links} target='blank'> link</a>
-    </p>
-  </div>
+
         <div className="footer">
           <Footer />
           </div>

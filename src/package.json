@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@bit/roni5.shop2.global.footer": "file:./components/global/footer",
+    "@bit/roni5.shop2.global.header": "file:./components/global/header"
+  }
+}
