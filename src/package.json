@@ -1,6 +1,13 @@
 {
   "dependencies": {
     "@bit/roni5.shop2.global.footer": "file:./components/global/footer",
-    "@bit/roni5.shop2.global.header": "file:./components/global/header"
+    "@bit/roni5.shop2.global.header": "file:./components/global/header",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "enzyme-to-json": "^3.3.4",
+    "react-test-renderer": "^16.5.0"
+  },
+  "devDependencies": {
+    "jest-cli": "^23.5.0"
   }
 }
