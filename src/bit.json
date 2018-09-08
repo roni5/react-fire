@@ -1,0 +1,9 @@
+{
+    "env": {},
+    "dependencies": {
+        "roni5.shop2/global/footer": "1.0.0",
+        "roni5.shop2/global/header": "1.0.0"
+    },
+    "componentsDefaultDirectory": "components/{namespace}/{name}",
+    "packageManager": "npm"
+}

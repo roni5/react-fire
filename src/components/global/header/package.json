@@ -1,0 +1,10 @@
+{
+  "name": "@bit/roni5.shop2.global.header",
+  "version": "1.0.0",
+  "homepage": "https://bitsrc.io/roni5/shop2/global/header",
+  "main": "style.css",
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE"
+}
