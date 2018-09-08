@@ -1,6 +1,6 @@
 
 /* eslint-disable no-unused-vars */
-
+https://www.sitepoint.com/test-react-components-jest/
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as TestUtils from 'react-dom/test-utils';
