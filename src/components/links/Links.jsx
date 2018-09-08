@@ -1,4 +1,3 @@
-import React from 'react'
 import { css } from "react-emotion";
 export const links = css`
   color: hotpink;

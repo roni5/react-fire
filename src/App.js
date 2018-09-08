@@ -6,11 +6,8 @@ import './App.css';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Title from './components/title/Title';
-import UserItem from './components/user/UserItem'
-import Links, {paragraph, links} from './components/links/Links'
-import styled, { css } from "react-emotion";
-import Nav from './components/header/Nav';
-
+import UserItem from './components/user/UserItem';
+import { paragraph, links } from './components/links/Links';
 
 class App extends Component {
   constructor() {
@@ -28,7 +25,7 @@ class App extends Component {
     songs[id]  = {
       id: id,
       title: title,
-      chordpro: ''
+      artist: ''
 
     };
 
@@ -54,7 +51,7 @@ class App extends Component {
         <Header />
           <div className="workspace">
           </div>
-        <Title>The Next Generation of CSS-in-JS </Title>
+        <Title>The React CSS-in-JS </Title>
         <Title> <h2>This should be read</h2></Title>
 
         <UserItem user='Roni' />
@@ -62,7 +59,7 @@ class App extends Component {
     <p className={paragraph}>
       Some text with a
       <a className={links} target='blank'> link</a>
-          
+
     </p>
   </div>
         <div className="footer">

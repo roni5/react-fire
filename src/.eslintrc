@@ -1,11 +1,10 @@
 {
   "extends": [
-    "standard",
+    "eslint:recommended",
     "plugin:react/recommended"
   ],
   "plugins": [
     "import",
-    "react",
     "standard"
   ],
   "parser": "babel-eslint",
