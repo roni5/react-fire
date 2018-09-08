@@ -33,3 +33,9 @@ test('CheckboxWithLabel renders the text inside App', () => {
     //expect(checkbox.text()).toEqual('On');
   );
 });
+it('renders correctly', () => {
+  const tree = renderer
+    .create(<CheckboxWithLabel />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
