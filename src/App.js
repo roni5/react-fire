@@ -9,6 +9,7 @@ import Title from './components/title/Title';
 import UserItem from './components/user/UserItem';
 import CheckboxWithLabel from './components/checkbox/CheckboxWithLabel';
 import { paragraph, links } from './components/links/Links';
+import Page from './components/page/Page';
 
 class App extends Component {
   constructor() {
@@ -48,13 +49,14 @@ class App extends Component {
   }
   render() {
     return (
+      <Page>
       <div className="App wrapper">
         <Header />
           <div className="workspace">
           </div>
-        <Title>The React CSS-in-JS </Title>
-        <Title> <h2>This should be read</h2></Title>
-
+        <Title> React Emotion CSS-in-JS </Title>
+        <Title> <h2>Jest Enzyme </h2></Title>
+        <Title> on Bitsrc.io </Title>
         <UserItem user='Roni' />
         <div>
     <p className={paragraph}>
@@ -67,6 +69,7 @@ class App extends Component {
           <Footer />
           </div>
       </div>
+      </Page>
     );
   }
 }

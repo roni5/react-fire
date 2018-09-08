@@ -76,5 +76,49 @@
         "mainFile": "src/components/sum/sum.js",
         "origin": "AUTHORED"
     },
+    "checkbox/checkboxlabel": {
+        "files": [
+            {
+                "relativePath": "src/components/checkbox/CheckboxWithLabel.jsx",
+                "test": false,
+                "name": "CheckboxWithLabel.jsx"
+            }
+        ],
+        "mainFile": "src/components/checkbox/CheckboxWithLabel.jsx",
+        "origin": "AUTHORED"
+    },
+    "state/function": {
+        "files": [
+            {
+                "relativePath": "src/__tests__/state-functions.test.js",
+                "test": false,
+                "name": "state-functions.test.js"
+            }
+        ],
+        "mainFile": "src/__tests__/state-functions.test.js",
+        "origin": "AUTHORED"
+    },
+    "checkbox/render": {
+        "files": [
+            {
+                "relativePath": "src/__tests__/render.test.js",
+                "test": false,
+                "name": "render.test.js"
+            }
+        ],
+        "mainFile": "src/__tests__/render.test.js",
+        "origin": "AUTHORED"
+    },
+    "test/checklabel": {
+        "files": [
+            {
+                "relativePath": "src/__tests__/CheckboxWithLabel.test.js",
+                "test": false,
+                "name": "CheckboxWithLabel.test.js"
+            }
+        ],
+        "mainFile": "src/__tests__/CheckboxWithLabel.test.js",
+        "origin": "AUTHORED"
+    },
     "version": "13.0.4"
 }

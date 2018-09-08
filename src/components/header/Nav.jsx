@@ -1,15 +1,40 @@
-import styled from 'react-emotion';
+//import styled from 'react-emotion';
+import { css } from "react-emotion";
 
-const Nav = styled('div')`
-	color: #C71585;
-  flex: 0 0 10px;
-	max-height: 10px;
-	padding: 15px 0 0 10px;
-	margin: 0 200px 0 0;
-	height: 10px;
-	display: flex;
-	align-items: flex-end;
-  width: calc(100% - 210px);
-`;
+/** const ulist = styled('ul')`
+*	color: #C71585;
+*	flex-wrap: wrap;
+*	liststyle:none;
+*  > li {
+*		liststyle:none;
+*    flex-basis: 50%;
+*  }
+*`;
+*/
+export const Nav = css`
+@media all and (max-width: 400px) {
+listStyle: none:
+flex-wrap: wrap;
+> li {
+	    flex-basis: 100%;
+	 }
+}
 
-export default Nav;
+`
+export const li = css`
+	display: inline-block;
+  color: #C71585;
+	flex-basis: 100%;
+	margin: 0 5px;
+	order: 1;
+  :hover${li} {
+   {color:hotpink;}
+  }
+`
+export const search = css`
+listStyle: none:
+background: #C71585;
+order: 1;
+text-decoration:none;
+
+`

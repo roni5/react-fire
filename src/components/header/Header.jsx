@@ -1,15 +1,22 @@
 import React from 'react'
-import Nav from './Nav';
+import { Nav, li, search } from './Nav';
+
+export const Input = () => {
+        return (
+                <input style={{background: '#C7CECE'}} type={"text"} placeholder={'Search'}></input>
+        )
+      }
 
 //Stateless Components
-const Header = () => (
+const Header = ({ type }) => (
         <header >
-                <div>
-                        <Nav  href="/">Home</Nav>
-                        <Nav  href="/profile">Company</Nav>
-                        <Nav  href="/profile/Roni">Roni</Nav>
-                </div>
+                        <Nav className={Nav} >
+                        <li className={li} href="/">Home</li>
+                        <li className={li} href="/profile">Company</li>
+                        <li class={li}><Input class={search} /></li>
+                        <li className={li} href="/profile/logout">Logout</li>
+                        </Nav>
         </header>
-);
+                );
 
 export default Header;
