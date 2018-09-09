@@ -1,4 +1,6 @@
-class MyComponent extends Component {
+import React, { Component } from 'react';
+
+class Handle extends Component {
   static propTypes = {
     handleClick: PropTypes.func,
   }
@@ -9,3 +11,4 @@ class MyComponent extends Component {
     )
   }
 }
+export default Handle;

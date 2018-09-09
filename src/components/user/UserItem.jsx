@@ -10,17 +10,20 @@ const User = styled('p')`
     color: #C71585;
   `;
   const Users = styled('h2')`
-  font-size: 2em;
+  font-size: 1em;
   text-align: center;
   margin: 0.5em;
   padding: 0;
   color: black;
+
 `;
 const UserItem = ({ user, ...restProps }) => (
-	<User {...restProps}>
- <Users> <h2 >Hello!!! </h2></Users>
-		<p user={"Roni"}>I am </p>
-	</User>
+  <Users {...restProps}>
+    <User >  Welcome </User>
+  Hello<User>{user} </User>
+
+
+	</Users>
 );
 
 export default UserItem;

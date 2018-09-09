@@ -3,13 +3,20 @@ import { base } from './base';
 //import { css } from 'emotion';
 //import logo from './logo.svg';
 import './App.css';
+import {ThemeContext, themes} from './components/atoms/theme-context';
+import ThemedButton from './components/atoms/themed-button';
+import ThemeTogglerButton from './components/atoms/ThemeTogglerButton';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Title from './components/title/Title';
 import UserItem from './components/user/UserItem';
+import ImageList from './components/gallery/ImageList';
 import CheckboxWithLabel from './components/checkbox/CheckboxWithLabel';
+//import Counter from './components/molecule/Counter';
 import { paragraph, links } from './components/links/Links';
 import Page from './components/page/Page';
+
+
 
 class App extends Component {
   constructor() {
@@ -18,6 +25,21 @@ class App extends Component {
     this.addSong = this.addSong.bind(this);
     this.state = {
       songs: { }
+    };
+
+    this.toggleTheme = () => {
+      this.setState(state => ({
+        theme:
+          state.theme === themes.dark
+            ? themes.light
+            : themes.dark,
+      }));
+    };
+    // State also contains the updater function so it will
+    // be passed down into the context provider
+    this.state = {
+      theme: themes.light,
+      toggleTheme: this.toggleTheme,
     };
   }
 
@@ -54,10 +76,16 @@ class App extends Component {
         <Header />
           <div className="workspace">
           </div>
-        <Title> React Emotion CSS-in-JS </Title>
-        <Title> <h2>Jest Enzyme </h2></Title>
-        <Title> on Bitsrc.io </Title>
-        <UserItem user='Roni' />
+          <Title> React Emotion CSS-in-JS </Title>
+          <ThemeContext.Provider value={this.state}>
+        <Content />
+      </ThemeContext.Provider>
+            <Title> <h2>Jest Enzyme </h2></Title>
+        <ImageList src={'https://res.cloudinary.com/shopwiz-net/image/upload/v1534764357/more-trees-03.png' } height={200} width={200} />
+          <Title> on Bitsrc.io </Title>
+          <div>
+        </div>
+          <UserItem user={`Roni`}  />
         <div>
     <p className={paragraph}>
       Some text with a
@@ -73,5 +101,11 @@ class App extends Component {
     );
   }
 }
-
+function Content() {
+  return (
+    <div>
+      <ThemeTogglerButton />
+    </div>
+  );
+}
 export default App;

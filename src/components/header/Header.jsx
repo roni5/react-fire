@@ -13,7 +13,7 @@ const Header = ({ type }) => (
                         <Nav className={Nav} >
                         <li className={li} href="/">Home</li>
                         <li className={li} href="/profile">Company</li>
-                        <li class={li}><Input class={search} /></li>
+                        <li class={li}><Input className={search} /></li>
                         <li className={li} href="/profile/logout">Logout</li>
                         </Nav>
         </header>

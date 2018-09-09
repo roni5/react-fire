@@ -1626,3 +1626,133 @@ ReactWrapper {
   },
 }
 `;
+
+exports[`CheckboxWithLabel renders the text inside App 2`] = `
+initialize {
+  "0": Object {
+    "attribs": Object {},
+    "children": Array [
+      Object {
+        "data": "  Emails",
+        "next": Object {
+          "attribs": Object {
+            "type": "checkbox",
+          },
+          "children": Array [],
+          "name": "input",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": Object {
+            "data": "Off",
+            "next": null,
+            "parent": [Circular],
+            "prev": [Circular],
+            "type": "text",
+          },
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "type": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "type": undefined,
+          },
+        },
+        "parent": [Circular],
+        "prev": null,
+        "type": "text",
+      },
+      Object {
+        "attribs": Object {
+          "type": "checkbox",
+        },
+        "children": Array [],
+        "name": "input",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "data": "Off",
+          "next": null,
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "text",
+        },
+        "parent": [Circular],
+        "prev": Object {
+          "data": "  Emails",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": null,
+          "type": "text",
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "type": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "type": undefined,
+        },
+      },
+      Object {
+        "data": "Off",
+        "next": null,
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {
+            "type": "checkbox",
+          },
+          "children": Array [],
+          "name": "input",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": Object {
+            "data": "  Emails",
+            "next": [Circular],
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "type": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "type": undefined,
+          },
+        },
+        "type": "text",
+      },
+    ],
+    "name": "label",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {},
+    "x-attribsPrefix": Object {},
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
+}
+`;

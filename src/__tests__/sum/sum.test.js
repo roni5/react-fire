@@ -1,4 +1,4 @@
-//qimport renderer from 'react-test-renderer'
+//import renderer from 'react-test-renderer'
 const sum = require('./sum')
 
 test('adds 1 + 2 to equal 3', () => {

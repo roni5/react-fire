@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material/image-list": "^0.39.1",
     "ajv": "^6.5.2",
     "babel-plugin-emotion": "^9.2.8",
     "emotion": "^9.2.8",

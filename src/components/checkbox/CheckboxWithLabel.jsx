@@ -1,4 +1,5 @@
 import React from 'react';
+import * as PropTypes from "prop-types"
 
 export default class CheckboxWithLabel extends React.Component {
   constructor(props) {
@@ -7,7 +8,10 @@ export default class CheckboxWithLabel extends React.Component {
 
     this.onChange = this.onChange.bind(this);
   }
-
+  static propTypes = {
+    isChecked: PropTypes.bool.isRequired,
+    onChange : PropTypes.func
+  }
   onChange() {
     this.setState({isChecked: !this.state.isChecked});
   }
