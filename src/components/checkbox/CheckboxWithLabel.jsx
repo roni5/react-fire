@@ -1,3 +1,7 @@
+/**
+ * React Checkbox css js
+ * React emotion Css in Js
+ */
 import React from 'react';
 import * as PropTypes from "prop-types"
 

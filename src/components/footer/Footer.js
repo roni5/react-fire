@@ -1,3 +1,8 @@
+/**
+ * React Footer Component
+ * React emotion Css in Js
+ */
+
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 import { css } from "react-emotion";
