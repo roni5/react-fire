@@ -6,8 +6,8 @@ listStyle: none:
 
 `
 export const list = css`
-background: #EE82EE;
-  color: #C71585;
+background: #C71585;
+  color: #fff;
 	max-height: 100%;
 	padding: 15px auto;
 	margin: 0 auto;
@@ -15,7 +15,6 @@ background: #EE82EE;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #C71585;
   height: 40px;
   .${ulist} {
 

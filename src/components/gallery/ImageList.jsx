@@ -1,7 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-//import "@material/image-list/mdc-image-list";
-//import "@material/image-list/mdc-image-list";
+//import PropTypes from 'prop-types';
+
 
 const ImageList = ({src, height, width}) => {
   return (

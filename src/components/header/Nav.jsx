@@ -8,33 +8,49 @@ import { css } from "react-emotion";
 *  > li {
 *		liststyle:none;
 *    flex-basis: 50%;
+text-decoration:none;
 *  }
 *`;
 */
-export const Nav = css`
+export const Nav = css` {
+	margin-top: 18px;
+	padding-top: 1em
+	height: 30px;
+	-webkit-transition: background .125s ease;
+  transition: background .125s ease;
 @media all and (max-width: 400px) {
 listStyle: none:
 flex-wrap: wrap;
-> li {
-	    flex-basis: 100%;
-	 }
-}
+height: 27px;
 
+> li {
+			flex-basis: 100%;
+			padding: 5px 7px;
+	 }
+ }
+}
 `
 export const li = css`
 	display: inline-block;
-  color: #C71585;
+	padding: 7px 10px;
+	border-radius: 3px;
+  color: #fff;
 	flex-basis: 100%;
-	margin: 0 5px;
+	margin: 12px 5px;
 	order: 1;
+	background:#c71585;
   :hover${li} {
-   {color:hotpink;}
+   {background:#ff; color: hotpink;}
   }
 `
 export const search = css`
-listStyle: none:
-background: #C71585;
+background: #fff;
 order: 1;
-text-decoration:none;
-
+`
+export const input = css`
+background: #fff;
+:focus {
+    outline: none !important;
+    box-shadow: 0 0 2px #719ECE;
+}
 `

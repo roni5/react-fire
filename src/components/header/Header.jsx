@@ -1,9 +1,9 @@
 import React from 'react'
-import { Nav, li, search } from './Nav';
+import { Nav, li, search , input} from './Nav';
 
 export const Input = () => {
         return (
-                <input style={{background: '#C7CECE'}} type={"text"} placeholder={'Search'}></input>
+                <input className={search, input} type={"text"} placeholder={'Search'}></input>
         )
       }
 

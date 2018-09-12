@@ -6,6 +6,7 @@ import './App.css';
 import {ThemeContext, themes} from './components/atoms/theme-context';
 import ThemedButton from './components/atoms/themed-button';
 import ThemeTogglerButton from './components/atoms/ThemeTogglerButton';
+import SearchBar from './components/atoms/Search';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Title from './components/title/Title';
@@ -15,6 +16,7 @@ import CheckboxWithLabel from './components/checkbox/CheckboxWithLabel';
 //import Counter from './components/molecule/Counter';
 import { paragraph, links } from './components/links/Links';
 import Page from './components/page/Page';
+
 
 
 
@@ -82,7 +84,6 @@ class App extends Component {
       </ThemeContext.Provider>
             <Title> <h2>Jest Enzyme </h2></Title>
         <ImageList src={'https://res.cloudinary.com/shopwiz-net/image/upload/v1534764357/more-trees-03.png' } height={200} width={200} />
-          <Title> on Bitsrc.io </Title>
           <div>
         </div>
           <UserItem user={`Roni`}  />

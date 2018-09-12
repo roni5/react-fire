@@ -2,7 +2,7 @@ import styled from 'react-emotion';
 
 
   const Title = styled('h1')`
-    color: #DB7093;
+    color: #C71585;
     font-size: 1.5em;
     text-align: center;
     margin: 0.5em;
