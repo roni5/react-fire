@@ -19,8 +19,8 @@ const User = styled('p')`
 `;
 const UserItem = ({ user, ...restProps }) => (
   <Users {...restProps}>
-    <User >  Welcome </User>
-  Hello<User>{user} </User>
+    <User >  Welcome {user}</User>
+ 
 
 
 	</Users>

@@ -13,7 +13,7 @@ import Title from './components/title/Title';
 import UserItem from './components/user/UserItem';
 import ImageList from './components/gallery/ImageList';
 import CheckboxWithLabel from './components/checkbox/CheckboxWithLabel';
-//import Counter from './components/molecule/Counter';
+import TitleList from './components/itemlist/TitleList';
 import { paragraph, links } from './components/links/Links';
 import Page from './components/page/Page';
 
@@ -78,12 +78,19 @@ class App extends Component {
         <Header />
           <div className="workspace">
           </div>
-          <Title> React Emotion CSS-in-JS </Title>
+          <Title> React Emotion-JS <h2>Jest Enzyme </h2></Title>
           <ThemeContext.Provider value={this.state}>
-        <Content />
-      </ThemeContext.Provider>
-            <Title> <h2>Jest Enzyme </h2></Title>
-        <ImageList src={'https://res.cloudinary.com/shopwiz-net/image/upload/v1534764357/more-trees-03.png' } height={200} width={200} />
+          <Content />
+          </ThemeContext.Provider>
+          </div>
+          <UserItem user={`Roni`}  />
+        <div>
+        <div className="footer">
+          <Footer />
+          </div>
+          <Title>  <TitleList title="Top TV for Roni" url='discover/tv?sort_by=popularity.desc&page=1' /> </Title>
+
+          <ImageList src={'https://res.cloudinary.com/shopwiz-net/image/upload/v1534764357/more-trees-03.png' } height={200} width={200} />
           <div>
         </div>
           <UserItem user={`Roni`}  />
@@ -94,9 +101,6 @@ class App extends Component {
       <CheckboxWithLabel />
     </p>
   </div>
-        <div className="footer">
-          <Footer />
-          </div>
       </div>
       </Page>
     );
